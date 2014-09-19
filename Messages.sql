@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `messages` (
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
+CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldMessages`()
 BEGIN
 	TRUNCATE TABLE `messages`
 END$$
